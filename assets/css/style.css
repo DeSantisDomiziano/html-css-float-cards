@@ -8,3 +8,19 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* COLOR PALETTE */
+:root{
+    --float-namepage: #e53170;
+    --float-link: #67c2e6;
+    --float-bgprofile: #0f0e17;
+}
+
+header {
+    font-size: 1.5rem;
+    color: var(--float-namepage);
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
