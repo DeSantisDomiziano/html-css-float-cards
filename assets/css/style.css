@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* COLOR PALETTE */
@@ -19,24 +19,23 @@ body{
 header {
     color: var(--float-namepage);
     padding: 2rem;
+    text-align: center;
 }
 
 .container, header {
     max-width: 1170px;
     margin: 0 auto;
-    text-align: center;
 }
 
 /* Leanding page */
 .container > p {
     margin-bottom: 1.75rem;
+    text-align: center;
 }
 
-/* Debug */
-.debug .col {
-    height: 100px;
+.col {
+    color: white;
     background-color: var(--float-bgprofile);
-    border: 3px solid blue;
 }
 
 /* Float */
@@ -45,3 +44,37 @@ header {
     float: left;
     width: calc(100% / 3 - 20px)
 }
+
+.col img {
+height: 100px;
+float: left;
+}
+
+/* Clearfix */
+.columns::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+span, a{
+    float: left;
+    width: calc(100% - 100px);
+    line-height: 2.3;
+    padding-left: 1rem;
+}
+
+.name {
+    font-weight: 900;
+}
+
+[href^="mailto:"] {
+    color: var(--float-link);
+    text-decoration: none;
+}
+
+.profession, a{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
