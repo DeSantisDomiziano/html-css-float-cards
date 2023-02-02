@@ -15,12 +15,33 @@ body{
     --float-bgprofile: #0f0e17;
 }
 
+/* Utility */
 header {
-    font-size: 1.5rem;
     color: var(--float-namepage);
-    max-width: 1170px;
-    margin: 0 auto;
-    text-align: center;
     padding: 2rem;
 }
 
+.container, header {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Leanding page */
+.container > p {
+    margin-bottom: 1.75rem;
+}
+
+/* Debug */
+.debug .col {
+    height: 100px;
+    background-color: var(--float-bgprofile);
+    border: 3px solid blue;
+}
+
+/* Float */
+.columns .col{
+    margin: 10px;
+    float: left;
+    width: calc(100% / 3 - 20px)
+}
