@@ -13,6 +13,7 @@ body{
     --float-namepage: #e53170;
     --float-link: #67c2e6;
     --float-bgprofile: #0f0e17;
+    --float-boxshadow: #cdcdcc;
 }
 
 /* Utility */
@@ -36,6 +37,7 @@ header {
 .col {
     color: white;
     background-color: var(--float-bgprofile);
+    box-shadow: 0 0 4px 7px var(--float-boxshadow);
 }
 
 /* Float */
